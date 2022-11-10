@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="cs">
+
+
+<head>
+    <title>Hra kostky</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    
+
+    input[type=radio]#modra {
+            accent-color: blue;
+        }
+  
+        input[type=radio]#cerna {
+            accent-color: black;
+        }
+  
+        input[type=radio]#ruzova {
+            accent-color: pink;
+        }
+  
+        input[type=radio]#zelena {
+            accent-color: rgb(2, 148, 2);
+        };
+
+        
+
+</style>
+<body>
+    <header class="jumbotron bg-success">
+        <h1 class="display-3 text-light text-center">Kostky</h1>
+    </header>
+    <main class="container ">
+        <div class="m-3 text-center">
+            <img src="img/modra/kostka6.png" alt="kostka" id="dice">
+        </div>
+        <div id="result" class="alert alert-success">Výsledky</div>
+        <div>
+            <button class="btn btn-danger" id="play">HREJ</button>
+        </div>
+<br>
+        <div class="mb-3 row">
+            <label for="vzhled" class="col-sm-3 col-form-label">
+                <div class="alert  alert-success">Vzhled
+            </label>
+            <div class="col-sm-9" >
+                
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vzhled" id="modra" value="modra" checked>
+                        modrá
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vzhled" id="cerna" value="cerna" > černá
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vzhled" id="ruzova" value="ruzova"> růžová
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vzhled" id="zelena" value="zelena"> zelena
+                    </label>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <button class="btn btn-danger" id="ButtonSkin">Změnit vzhled</button>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/play.js"></script>
+</body>
+
+</html>
